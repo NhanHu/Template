@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Tom</title>
+</head>
+
+<body>
+    <script>
+
+        let Priv = {
+            Name : "Nhan",
+            Age : "15",
+            Birthday : "9/3"
+        }
+        localStorage.setItem("Priv", JSON.stringify(Priv))
+        console.log(JSON.parse(localStorage.getItem("Priv")))
+    </script>
+</body>
+
+</html>

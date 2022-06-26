@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Tom</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['mot','hai']
+                console.log(arr[1])
+                console.log[arr.length]
+        let ob = {
+                    name: "Ah",
+                    a: "ej"
+                }
+        var varJson = '["Hello", 1, "he"]'
+        var Jsnn = '{"name":"jeje" , "unf":"jejedd"}'
+        console.log(JSON.parse(Jsnn))
+        // The top one change from JSON to javascript file
+        console.log(JSON.stringify(ob))
+        // The top one change from JS to JSON file
+        localStorage.setItem("D", "djjd")
+        // Local can't read object from html have to transfer into JSON file, array still can
+        
+        localStorage.setItem("e", JSON.stringify(ob))
+        console.log(localStorage.getItem("e"))
+        
+
+
+        let Priv = {
+            Name : "Nhan",
+            Age : "15",
+            Birthday : "9/3"
+        }
+        localStorage.setItem("Priv", JSON.stringify(Priv))
+        console.log(JSON.parse(localStorage.getItem("Priv")))
+    </script>
+</body>
+
+</html>
