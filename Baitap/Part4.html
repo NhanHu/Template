@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        p {
+            display: inline;
+            margin: auto;
+            margin-top: 300px;
+            font-size: 30px;
+            width: 400px;
+        }
+        
+
+        body {
+            text-align: center;
+        }
+            
+    </style>
+</head>
+
+<body>
+    <p id="time"></p>
+    <p>:</p>
+    <p id="tim"></p>
+    <p>:</p>
+    <p id="ti"></p>
+    <script>
+        setInterval(hour, 1000)
+        setInterval(second, 1000)
+        setInterval(minute, 1000)
+        let time = new Date()
+        function hour() {
+            let h = time.getHours();
+
+            if (h < 10) {
+                h = "0" + h
+            }
+            return h
+
+        }
+        function minute() {
+            let m = time.getMinutes();
+            if (m < 10) {
+                m = "0" + m
+            }
+            return m
+        }
+        function second() {
+            let s = time.getSeconds();
+            if (s < 10) {
+                s = "0" + s
+            }
+            return s
+        }
+        document.getElementById("time").innerHTML = hour()
+        document.getElementById("tim").innerHTML = minute()
+        document.getElementById("ti").innerHTML = second()
+    </script>
+</body>
+
+</html>
