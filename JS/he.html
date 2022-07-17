@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" name="username" value="Enter name  here">
+    <input id="pass" name="username" value="Enter pass  here">
+    <button onclick="ha()">Submit</button>
+</body>
+<script>
+    ha = () => {
+        let name1 = document.getElementById("username").value
+        let pass1  = document.getElementById("pass").value
+        var  Login = {
+            'Name': name1,
+            'Pass': pass1
+        }
+        localStorage.setItem("Account", JSON.stringify(Login))
+    }
+
+</script>
+</html>
